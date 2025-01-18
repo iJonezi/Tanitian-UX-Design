@@ -1,0 +1,125 @@
+#navigation {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: flex-end;
+}
+
+.divider-y {
+    border-right: thick solid #000000b6;
+    padding: 0px 50px 0px 20px;
+}
+
+.text-logo {
+    white-space: nowrap;
+    font-family: "Italianno", 'Times New Roman', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40pt;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: black;
+}
+
+.header nav {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar {
+    padding-top: 20px;
+    display: inline-block;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar li {
+    padding-left: 100px;
+    justify-content: space-evenly;
+    list-style-type: none;
+    display: inline;
+}
+
+.navbar li a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+  
+.navbar li a:hover {
+    transform: translateY(-3px);
+}
+  
+.navbar li a::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: #7ecbe2;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+}
+  
+.navbar li a:hover::before {
+    transform: scaleY(1);
+}
+
+#active-nav::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: #3977d4;
+    transform: translateY(-2px);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+}
+
+.searchbar-container {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+li input[type=text] {
+    position: relative;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+li input[type=text]:focus {
+    outline: none;
+}
+
+#searchBtn {
+    position: absolute;
+    background-image: url(/imgs/icons8-search-128.png);
+    background-size: 32px;
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    border: none;
+    position: relative;
+    right: 20px;
+}
