@@ -16,5 +16,5 @@ body {
     background-size: cover;
     background-position-y: 15%;
     position: relative;
-    background-image: url(/imgs/index-header.jpg);
+    background-image: url(imgs/index-header.jpg);
 }
