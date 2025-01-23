@@ -114,7 +114,7 @@ li input[type=text]:focus {
 
 #searchBtn {
     position: absolute;
-    background-image: url(imgs/icons8-search-128.png);
+    background-image: url(../imgs/icons8-search-128.png);
     background-size: 32px;
     width: 32px;
     height: 32px;
