@@ -3,10 +3,16 @@
     padding: 0;
 }
 
-body {
+#navigation {
     background-color: rgba(179, 178, 178, 0.253);
     font-family: 'Instrument Serif', 'Times New Roman', sans-serif;
-    font-size: 15pt;
+    font-size: 16pt;
+}
+
+body {
+    background-color: rgba(131, 238, 229, 0.253);
+    font-family: 'Roboto', 'Times New Roman', sans-serif;
+    font-size: 17pt;
 }
 
 #bannerimg {
