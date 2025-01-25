@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Island of Taniti</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/body-styling.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
+    <style>
+        #bannerimg {
+            height: 250px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 15%;
+            position: relative;
+            background-image: url(../imgs/index-header.jpg);
+        }
+
+        #bannerimg-text {
+            position: absolute;
+            top: 50%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-size: 60px;
+            font-family: 'Italianno', 'Times New Roman', sans-serif;
+        }
+    </style>
     <div id="navigation">
         <header class="header">
             <div class="divider-y">
@@ -44,7 +66,7 @@
                     Taniti has an indigenous population of about 20,000. Until a recent increase in tourism, most the Tanitian economy was dominated by fishing or agriculture.
                 </p>
             </div>
-            <div>
+            <div class="index-gallary">
                 <img src="../imgs/index-main.jpg" alt="Mountainous Islands">
                 <img src="../imgs/index-food.jpg" alt="Mountainous Islands">
                 <img src="../imgs/index-beach.jpg" alt="Mountainous Islands">
