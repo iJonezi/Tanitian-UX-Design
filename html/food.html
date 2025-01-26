@@ -1,43 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>The Island of Taniti</title>
-        <link rel="stylesheet" href="../css/index.css">
-        <link rel="stylesheet" href="../css/navbar.css">
-        <link rel="stylesheet" href="../css/footer.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div id="navigation">
-            <header class="header">
-                <div class="divider-y">
-                    <a href="../index.html" class="text-logo">The Island of Taniti</a>
-                </div>
-                <nav>
-                    <ul class="navbar">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="lodging.html">Lodging</a></li>
-                        <li><a href="food.html" id="active-nav">Food</a></li>
-                        <li><a href="attractions.html">Attractions</a></li>
-                        <li><a href="transportation.html">Transportation</a></li>
-                        <li>
-                            <form action="" class="searchbar-container">
-                                <input type="text" placeholder="Search...">
-                                <input type="button" id="searchBtn">
-                            </form>
-                        </li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Island of Taniti</title>
+    <link rel="stylesheet" href="../css/body-styling.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        #bannerimg {
+            height: 250px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 55%;
+            position: relative;
+            background-image: url(../imgs/food-banner.jpg);
+        }
+    </style>
+    <div id="navigation">
+        <header class="header">
+            <div class="divider-y">
+                <a href="../index.html" class="text-logo">The Island of Taniti</a>
+            </div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="../index.html" >Home</a></li>
+                    <li><a href="../html/lodging.html">Lodging</a></li>
+                    <li><a href="../html/food.html" id="active-nav">Food</a></li>
+                    <li><a href="../html/attractions.html">Attractions</a></li>
+                    <li><a href="../html/transportation.html">Transportation</a></li>
+                    <li>
+                        <input type="text" placeholder="Search...">
+                        <input type="button" id="searchBtn">
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="bannerimg">
+    </div>
+    <main>
+        <section class="main-body">
+            <div class="info-container">
+                <p class="index-main-body-text">
+                    Taniti currently has 10 restaurants: five serve mostly local fish and rice, three serve American-style meals, and two serve Pan-Asian cuisine. The island also has Taniti has two supermarkets, two smaller grocery stores, and one convenience store that is open 24 hours a day.
+                </p>
+            </div>
+            <div class="restaurant-list">
+                <div class="list-item">
+                    <img src="../imgs/food-card1.jpg" alt="Restaurant 1">
+                    <ul>
+                        <li><em>Dish: </em> Baron's Ribs</li>
+                        <li><em>Cusine: </em>Malaysian</li>
+                        <li><em>Restaurant: </em>Taniti Baron</li>
                     </ul>
-                </nav>
-            </header>
-        </div>
-        <div id="bannerimg">
-        </div>
-    </body>
+                </div>
+                <div class="list-item">
+                    <img src="../imgs/food-card2.jpg" alt="Restaurant 1">
+                    <ul>
+                        <li><em>Dish: </em> Seared Steak n' Veggies</li>
+                        <li><em>Cusine: </em>American</li>
+                        <li><em>Restaurant: </em>Beachback</li>
+                    </ul>
+                </div>
+                <div class="list-item">
+                    <img src="../imgs/food-card3.jpg" alt="Restaurant 1">
+                    <ul>
+                        <li><em>Dish: </em> A Slice of Life</li>
+                        <li><em>Cusine: </em>Italian</li>
+                        <li><em>Restaurant: </em>Meg's Itali</li>
+                    </ul>
+                </div>
+                <div class="list-item">
+                    <img src="../imgs/food-card4.jpg" alt="Restaurant 1">
+                    <ul>
+                        <li><em>Dish: </em> Deviled Panini</li>
+                        <li><em>Cusine: </em>Italian</li>
+                        <li><em>Restaurant: </em>The Bread Shoppe</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <input type="button" id="bookBtn" value="Book Now!">
+            </div>
+        </section>
+    </main>
     <footer>
         <p class="address">
             1234 Main St, Anytown, USA<br>
@@ -51,4 +105,5 @@
         <p class="copyright">
             &copy; 2023 The Island of Taniti. All rights reserved.
     </footer>
+</body>
 </html>

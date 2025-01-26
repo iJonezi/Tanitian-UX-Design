@@ -27,7 +27,6 @@ section div {
 div {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .index-gallary img {
@@ -69,3 +68,41 @@ div {
     cursor: pointer;
 }
 
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    width: 100vw;
+    justify-content: left;
+    padding: 20px;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    margin: 30px 0;
+}
+
+.list-item img {
+    width: 300px;
+    height: 300px;
+}
+
+.list-item ul {
+    align-content: center;
+}
+
+.list-item ul li {
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+.checked {
+    color: orange;
+}
+
+.fa-star {
+    padding-left: 20px;
+}
