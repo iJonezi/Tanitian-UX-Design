@@ -29,6 +29,16 @@ div {
     justify-content: center;
 }
 
+#bannerimg-text {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Italianno', 'Times New Roman', sans-serif;
+}
+
 .index-gallary img {
     display: block;
     max-width: 100%;
@@ -78,15 +88,27 @@ div {
 }
 
 .list-item {
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
+    flex-direction: column;
     align-items: center;
     width: 50%;
     margin: 30px 0;
 }
 
+.list-item-hotel {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
 .list-item img {
     width: 300px;
+    height: 300px;
+}
+
+.hotel-img {
+    width: 500px;
     height: 300px;
 }
 
@@ -95,6 +117,15 @@ div {
 }
 
 .list-item ul li {
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+.list-item-hotel ul {
+    align-content: center;
+}
+
+.list-item-hotel ul li {
     list-style-type: none;
     padding: 10px 20px;
 }
